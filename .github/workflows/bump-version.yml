@@ -1,9 +1,7 @@
 name: "Bump Version"
 on:
   pull_request:
-    branches:
-      - "master"
-    action: "opened"      
+    types: [opened]      
 
 jobs:
   bump-version:
