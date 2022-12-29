@@ -1,13 +1,11 @@
 name: "Bump Version"
 on:
   pull_request:
-    branches:
-      - "master"
-    action: "opened"      
+    types: [opened]      
 
 jobs:
   bump-version:
-    name: "Bump Version on master"
+    name: "Bump Version on Pull Request Create"
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout source code"
