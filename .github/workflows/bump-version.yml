@@ -5,7 +5,7 @@ on:
 
 jobs:
   bump-version:
-    name: "Bump Version on master"
+    name: "Bump Version on Pull Request Create"
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout source code"
