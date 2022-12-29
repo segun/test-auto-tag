@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "private": true,
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node ./bin/index.js",
+    "start": "node bin/index.js",
     "test": "jest"
   },
   "dependencies": {
