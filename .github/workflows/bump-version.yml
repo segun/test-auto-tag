@@ -20,11 +20,7 @@ jobs:
         with:
           node-version: 16
       - name: "Automated Version Bump"
-        steps:
-          - uses: actions/checkout@v1
-            name: Checkout
-          - uses: ./.github/actions/auto-version
-            name: "Version Bump"
+        uses: "./.github/actions/auto-version"
         with:
           tag-prefix: ''
         env:

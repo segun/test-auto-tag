@@ -28,5 +28,5 @@ RUN yarn
 COPY . .
 
 RUN yarn build
-# Run `node /index.js`
-ENTRYPOINT ["node", "./.github/actions/auto-version/bin/index.js"]
+Run node ./bin/index.js
+# ENTRYPOINT ["node", "./.github/actions/auto-version/bin/index.js"]
