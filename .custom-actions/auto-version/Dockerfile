@@ -25,11 +25,12 @@ COPY package*.json ./
 RUN apt-get update
 RUN apt-get -y install git
 
-RUN npm i --only=production
+RUN npm i
 
 
 # Copy the rest of your action's code
 COPY . .
 
+RUN tsc
 # Run `node /index.js`
-ENTRYPOINT ["node", "/index.js"]
+ENTRYPOINT ["node", "./bin/index.js"]

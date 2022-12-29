@@ -1,4 +1,3 @@
-const { Toolkit } = require('actions-toolkit')
 const { execSync } = require('child_process')
 
 // Change working directory if user defined PACKAGEJSON_DIR
