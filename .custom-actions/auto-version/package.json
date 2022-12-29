@@ -11,7 +11,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "build": "tsc",
+    "start": "node ./bin/index.js",
     "test": "jest"
   },
   "dependencies": {
