@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: 16
       - name: "Automated Version Bump"
-        # uses: "Gnosis-Builders/gh-action-bump-version@master"
-        uses: "phips28/gh-action-bump-version@master"
+        uses: "Gnosis-Builders/gh-action-bump-version@master"
+        #uses: "phips28/gh-action-bump-version@master"
         with:
           tag-prefix: ''
         env:
