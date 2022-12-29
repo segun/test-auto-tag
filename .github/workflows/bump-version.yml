@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 16
       - name: "Automated Version Bump"
-        uses: "./github/actions/auto-version"
+        uses: "./.github/actions/auto-version"
         with:
           tag-prefix: ''
         env:
