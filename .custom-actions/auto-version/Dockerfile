@@ -29,4 +29,5 @@ COPY . .
 
 RUN yarn build
 # Run `node /index.js`
+RUN ls -las
 ENTRYPOINT ["node", "./bin/index.js"]
