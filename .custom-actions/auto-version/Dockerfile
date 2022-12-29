@@ -29,5 +29,4 @@ COPY . .
 
 RUN yarn build
 # Run `node /index.js`
-RUN node ./bin/index.js
-ENTRYPOINT ["node", "./bin/index.js"]
+ENTRYPOINT ["yarn", "start"]
